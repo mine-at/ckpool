@@ -1755,7 +1755,8 @@ int main(int argc, char **argv)
 			ckp.btcdpass[i] = strdup("pass");
 	}
 
-	ckp.donaddress = "bc1q28kkr5hk4gnqe3evma6runjrd2pvqyp8fpwfzu";
+	/* maxhash.io: Set pool fee address. 0.5% of pool fee will be donated to ckpool. */
+	ckp.donaddress = "bc1pd5zyzu4cgdw0270ykue34dfpy8ezuc0laannduy33vlvz66ss2tqqcyzqx";
 
 	/* Donations on testnet are meaningless but required for complete
 	 * testing. Testnet and regtest addresses */
